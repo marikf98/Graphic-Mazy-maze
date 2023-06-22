@@ -1,0 +1,4 @@
+2023-06-20 21:01:46,636 [JavaFX Application Thread] INFO  Model.MyModel - Generating maze
+2023-06-20 21:02:19,678 [JavaFX Application Thread] INFO  Model.MyModel - Generating maze
+2023-06-20 21:03:25,677 [JavaFX Application Thread] INFO  Model.MyModel - Generating maze
+2023-06-21 17:57:03,214 [JavaFX Application Thread] ERROR MyModel - Generating maze

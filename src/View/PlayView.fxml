@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import View.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="m_anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#move" prefHeight="700.0" prefWidth="950.0" style="-fx-background-image: url(/Images/BackGroundNotForGame.png);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PlayView">
+   <children>
+      <Pane fx:id="m_pane" layoutY="50.0" onKeyPressed="#move" prefHeight="700.0" prefWidth="900.0">
+         <children>
+            <MazeDisplayer fx:id="m_mazeDisplayer" height="650.0" onKeyPressed="#move" onMouseClicked="#mouseClicked" width="950.0" />
+         </children>
+      </Pane>
+      <Button layoutX="428.0" layoutY="7.0" mnemonicParsing="false" onAction="#solve" prefHeight="38.0" prefWidth="81.0" style="-fx-background-color: yellow; -fx-font-weight:bold" text="Solve" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow radius="14.68" width="39.72" />
+         </effect>
+      </Button>
+      <Button layoutX="289.0" layoutY="7.0" mnemonicParsing="false" onAction="#chooseCharacter" prefHeight="38.0" prefWidth="122.0" style="-fx-background-color: yellow; -fx-font-weight:bold" text="Generate" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow radius="14.68" width="39.72" />
+         </effect>
+      </Button>
+      <MenuBar id="MenuBarGame" layoutX="7.0" layoutY="7.0" prefHeight="38.0" prefWidth="265.0" style="-fx-background-color: yellow; -fx-font-weight:bold">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#newGame" text="New" />
+                  <MenuItem mnemonicParsing="false" onAction="#save" text="Save" />
+                  <MenuItem mnemonicParsing="false" onAction="#load" text="Load" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Options">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#options" text="Options" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#help" text="Help" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="About">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Exit">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#exit" text="Exit" />
+               </items></Menu>
+         </menus>
+         <effect>
+            <DropShadow />
+         </effect>
+      </MenuBar>
+   </children>
+</AnchorPane>

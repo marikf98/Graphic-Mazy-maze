@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="500.0" style="-fx-background-image: url(/Images/chooseCharacterBackground.png);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Error">
+   <children>
+      <Button layoutX="27.0" layoutY="147.0" mnemonicParsing="false" onAction="#backButtonAction" style="-fx-background-color: yellow; -fx-font-weight:bold" text="Back">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Label id="Error" layoutX="195.0" layoutY="38.0" style="-fx-font-weight:bold ;-fx-text-fill: yellow;" text="Error">
+         <font>
+            <Font name="Arial" size="38.0" />
+         </font>
+      </Label>
+      <Label id="Label_alert" layoutY="82.0" prefHeight="36.0" prefWidth="517.0" style="-fx-text-fill: yellow;" text="Please enter size that's bigger then 3 by 3">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

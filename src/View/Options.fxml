@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="800.0" style="-fx-background-image: url(/Images/BackGroundNotForGame.png);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Options">
+   <children>
+      <Button layoutX="335.0" layoutY="446.0" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="50.0" prefWidth="129.0" style="-fx-background-color: yellow; -fx-font-weight:bold" text="Back">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="m_emptyMazeButton" layoutX="138.0" layoutY="214.0" mnemonicParsing="false" onAction="#emptyMazeButton" prefHeight="50.0" prefWidth="120.0" style=" -fx-font-weight:bold" text="Empty Maze">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="m_simpleMazeButton" layoutX="138.0" layoutY="375.0" mnemonicParsing="false" onAction="#simpleMazeButton" prefHeight="50.0" prefWidth="120.0" style=" -fx-font-weight:bold" text="Simple Maze">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="m_primMazeButton" layoutX="138.0" layoutY="292.0" mnemonicParsing="false" onAction="#primMazeButton" prefHeight="50.0" prefWidth="120.0" style=" -fx-font-weight:bold" text="Prim Maze">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="m_bfsButton" layoutX="537.0" layoutY="214.0" mnemonicParsing="false" onAction="#bfsButton" prefHeight="50.0" prefWidth="120.0" style=" -fx-font-weight:bold" text="BFS">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="m_dfsButton" layoutX="537.0" layoutY="292.0" mnemonicParsing="false" onAction="#dfsButton" prefHeight="50.0" prefWidth="120.0" style=" -fx-font-weight:bold" text="DFS">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="m_bestButton" layoutX="537.0" layoutY="375.0" mnemonicParsing="false" onAction="#bestButton" prefHeight="50.0" prefWidth="120.0" style=" -fx-font-weight:bold" text="BestFS">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="307.0" layoutY="65.0" prefHeight="42.0" prefWidth="198.0" style="-fx-text-fill: yellow;" text="Properties">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="129.0" layoutY="131.0" prefHeight="42.0" prefWidth="236.0" style="-fx-text-fill: yellow;" text="Maze generator:">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="518.0" layoutY="131.0" prefHeight="42.0" prefWidth="173.0" style="-fx-text-fill: yellow;" text="Maze Solver:">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

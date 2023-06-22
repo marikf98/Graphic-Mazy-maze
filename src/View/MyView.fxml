@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane style="-fx-background-image: url(/Images/BackGroundNotForGame.png); -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MyViewController">
+   <children>
+      <Button layoutX="153.0" layoutY="292.0" mnemonicParsing="false" onAction="#startButton" prefHeight="100.0" prefWidth="155.0" style="-fx-background-color: yellow; -fx-font-weight:bold" text="Start" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="40.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="417.0" layoutY="287.0" mnemonicParsing="false" onAction="#exitButton" prefHeight="100.0" prefWidth="155.0" style="-fx-background-color: yellow; -fx-font-weight: bold;" text="Exit" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="40.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label layoutX="176.0" layoutY="103.0" prefHeight="50.0" prefWidth="418.0" style="-fx-text-fill: yellow; -fx-font-weight:bold" text="Welcome to the maze" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Arial" size="40.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="231.0" layoutY="196.0" prefHeight="50.0" prefWidth="308.0" style="-fx-text-fill: yellow; -fx-font-weight:bold" text="Try to eat the cherry" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
